@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<object-views xmlns="http://axelor.com/xml/ns/object-views"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://axelor.com/xml/ns/object-views
+  https://axelor.com/xml/ns/object-views/object-views_6.0.xsd">
+
+    <menuitem name="menu-detail-management"
+              title="Quản lý chi tiết"/>
+
+    <menuitem name="menu-detail-management-apartment"
+              parent="menu-detail-management"
+              title="Căn hộ"
+              action="action.apartment.view.all"/>
+
+    <menuitem name="menu-detail-management-resident"
+              title="Cư dân"
+              parent="menu-detail-management"
+              action=""/>
+
+    <menuitem name="menu-detail-management-vehicle"
+              title="Phương tiện"
+              parent="menu-detail-management"
+              action=""/>
+
+    <menuitem name="menu-detail-management-magnetic-door"
+              title="Cửa từ"
+              parent="menu-detail-management"
+              action=""/>
+
+    <menuitem name="menu-fee-config"
+              title="Cấu hình phí"></menuitem>
+
+    <menuitem name="menu-fee-config-management"
+              parent="menu-fee-config"
+              title="Mức phí quản lý"
+              action=""></menuitem>
+    
+    <menuitem name="menu-fee-config-parking"
+              parent="menu-fee-config"
+              title="Mức phí trông giữ phương tiên"
+              action=""></menuitem>
+
+    <menuitem name="menu-fee-config-water"
+              parent="menu-fee-config"
+              title="Mức phí nước"
+              action=""></menuitem>
+
+    <menuitem name="menu-category-manage"
+              title="Quản lý danh mục"></menuitem>
+
+    <menuitem name="menu-category-manage-management"
+              parent="menu-category-manage"
+              title="Loại phí quản lý"
+              action=""></menuitem>
+
+    <menuitem name="menu-category-manage-parking"
+              parent="menu-category-manage"
+              title="Loại phí trông giữ phương tiện"
+              action=""></menuitem>
+
+    <menuitem name="menu-category-manage-water"
+              parent="menu-category-manage"
+              title="Loại phí nước"
+              action=""></menuitem>
+
+    <menuitem name="menu-category-manage-block"
+              parent="menu-category-manage"
+              title="Khối nhà"
+              action=""></menuitem>
+
+    <menuitem name="menu-category-manage-vehicle"
+              parent="menu-category-manage"
+              title="Loại phương tiện"
+              action=""></menuitem>
+
+    <menuitem name="menu-category-manage-parking-zone"
+              parent="menu-category-manage"
+              title="Vị trí trông giữ phương tiện"
+              action=""></menuitem>
+
+    <menuitem name="menu-category-manage-resident-relationship"
+              parent="menu-category-manage"
+              title="QH với CSH"
+              action=""></menuitem>
+
+    <menuitem name="menu-category-manage-card"
+              parent="menu-category-manage"
+              title="Loại thẻ"
+              action=""></menuitem>
+
+
+
+
+</object-views>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<object-views xmlns="http://axelor.com/xml/ns/object-views"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://axelor.com/xml/ns/object-views
+  https://axelor.com/xml/ns/object-views/object-views_6.0.xsd">
+
+  <grid name="parking-zone-grid"
+        title="Parking Zone"
+        model="com.axelor.bms.db.ParkingZones"> 
+    <field name="code" />
+    <field name="name" />
+  </grid>
+
+  <form name="parking-zone-form"
+        title="Parking Zone"
+        model="com.axelor.bms.db.ParkingZones"> 
+    <panel name="overviewPanel" title="Overview"> 
+      <field name="code" />
+      <field name="name" />
+    </panel>
+  </form>
+
+</object-views>

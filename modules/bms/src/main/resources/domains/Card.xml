@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<domain-models xmlns="http://axelor.com/xml/ns/domain-models"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://axelor.com/xml/ns/domain-models http://axelor.com/xml/ns/domain-models/domain-models_6.0.xsd">
+
+    <module name="dssi" package="com.axelor.bms.db"/>
+
+    <entity name="Card">
+        <many-to-one name="cardType" ref="com.axelor.bms.db.CardType" title="Loại thẻ"></many-to-one>
+        <string name="printedCode" title="Mã thẻ in" required="true"></string>
+        <string name="code1" title="Mã thẻ 1"></string>
+        <string name="code2" title="Mã thẻ 2"></string>
+        <boolean name="isBroken" title="Thẻ bị hỏng"></boolean>
+        <boolean name="isLost" title="Thẻ bị mất"></boolean>
+    </entity>
+
+</domain-models>

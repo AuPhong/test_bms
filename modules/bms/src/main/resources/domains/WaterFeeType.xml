@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<domain-models xmlns="http://axelor.com/xml/ns/domain-models"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://axelor.com/xml/ns/domain-models http://axelor.com/xml/ns/domain-models/domain-models_6.0.xsd">
+
+    <module name="dssi" package="com.axelor.bms.db"/>
+    <entity name="WaterFeeType">
+        <string name="code" title="Mã" required="true"></string>
+        <string name="name" title="Tên" required="true"></string>
+        <datetime name="recurringChargeDate" title="Ngày tính phí định kỳ"></datetime>
+    </entity>
+
+</domain-models>

@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<domain-models xmlns="http://axelor.com/xml/ns/domain-models"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://axelor.com/xml/ns/domain-models http://axelor.com/xml/ns/domain-models/domain-models_6.0.xsd">
+
+    <module name="dssi" package="com.axelor.bms.db"/>
+
+    <entity name="Resident">
+        <many-to-many name="apartment" ref="com.axelor.bms.db.Apartment" title="Căn hộ" required="true"></many-to-many>
+        <string name="fullName" title="Họ tên" required="true"></string>
+        <integer name="gender" selection="bms.resident.gender" default="0" title="Giới tính"></integer>
+        <one-to-one name="residentRelationshipType" ref="com.axelor.bms.db.ResidentRelationshipType"
+                    title="Quan hệ với chủ sở hữu"></one-to-one>
+        <string name="phoneNumber" title="Số điện thoại"></string>
+        <string name="email" title="Email"></string>
+        <string name="idNumber" title="CCCD/CMND"></string>
+        <datetime name="dateOfBirth" title="Ngày sinh"></datetime>
+        <string name="address" title="Địa chỉ"></string>
+    </entity>
+
+</domain-models>

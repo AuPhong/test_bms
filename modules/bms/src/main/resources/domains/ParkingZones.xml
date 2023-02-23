@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<domain-models xmlns="http://axelor.com/xml/ns/domain-models"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://axelor.com/xml/ns/domain-models http://axelor.com/xml/ns/domain-models/domain-models_6.0.xsd">
+
+    <module name="dssi" package="com.axelor.bms.db"/>
+
+    <entity name="ParkingZones">
+        <string name="code" title="Code" required="true" unique="true"/>
+        <string name="name" title="Name" required="true"/>
+        <boolean name="autoSync" title="Tự động đồng bộ"></boolean>
+        <string name="apiConnect" title="Chuỗi kết nối" required="true"></string>
+        <datetime name="time" title="Thời gian" required="true"></datetime>
+    </entity>
+
+</domain-models>

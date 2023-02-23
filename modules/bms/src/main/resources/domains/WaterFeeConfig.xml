@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<domain-models xmlns="http://axelor.com/xml/ns/domain-models"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://axelor.com/xml/ns/domain-models http://axelor.com/xml/ns/domain-models/domain-models_6.0.xsd">
+
+    <module name="dssi" package="com.axelor.bms.db"/>
+
+    <entity name="WaterFeeConfig">
+        <one-to-many name="parkingFeeType" ref="com.axelor.bms.db.WaterFeeConfig" title="Loại phí nước"
+                     required="true"></one-to-many>
+        <decimal name="feeLevel" required="true" title="Mức"></decimal>
+        <decimal name="min" title="Từ" required="true"></decimal>
+        <decimal name="max" title="Đến" required="true"></decimal>
+        <decimal name="fee" title="Phí" required="true"></decimal>
+        <datetime name="effectiveDate" title="Ngày hiệu lực" required="true"></datetime>
+        <datetime name="expirationDate" title="Ngày hết hạn"></datetime>
+        <decimal name="extraFee" title="Phụ thu"></decimal>
+        <decimal name="VAT" title="VAT"></decimal>
+    </entity>
+
+</domain-models>

@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<domain-models xmlns="http://axelor.com/xml/ns/domain-models"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://axelor.com/xml/ns/domain-models http://axelor.com/xml/ns/domain-models/domain-models_6.0.xsd">
+
+    <module name="dssi" package="com.axelor.bms.db"/>
+
+    <entity name="Apartment">
+        <string name="code" title="Mã" required="true" unique="true"/>
+        <string name="name" title="Tên" required="true" unique="true"/>
+        <many-to-one name="block" ref="com.axelor.bms.db.Block" title="Khối nhà"></many-to-one>
+        <decimal name="buildUpArea" title="Diện tích tìm đường"/>
+        <decimal name="carpetArea" title="Diện tích thông thủy" required="true"/>
+        <datetime name="handOverDate" title="Ngày bàn giao"/>
+        <datetime name="chargeDate" title="Ngày tính phí"/>
+        <many-to-one name="managementFeeType" ref="com.axelor.bms.db.ManagementFeeType" title="Loại phí quản lý"></many-to-one>
+        <many-to-one name="waterFeeType" ref="com.axelor.bms.db.WaterFeeType" title="Loại phí nước"></many-to-one>
+    </entity>
+
+</domain-models>

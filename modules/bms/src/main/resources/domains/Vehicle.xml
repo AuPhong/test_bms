@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<domain-models xmlns="http://axelor.com/xml/ns/domain-models"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://axelor.com/xml/ns/domain-models http://axelor.com/xml/ns/domain-models/domain-models_6.0.xsd">
+
+    <module name="dssi" package="com.axelor.bms.db"/>
+
+    <entity name="Vehicle">
+        <one-to-many name="apartment" ref="com.axelor.bms.db.Apartment" title="Căn hộ" required="true"></one-to-many>
+        <string name="owner" title="Chủ xe" required="true"></string>
+        <many-to-one name="vehicleType" ref="com.axelor.bms.db.VehicleType" title="Loại xe"
+                     required="true"></many-to-one>
+        <string name="name" title="Tên" required="true"></string>
+        <string name="licensePlate" title="BSDK" required="true"></string>
+        <one-to-one name="card" ref="com.axelor.bms.db.Card" title="Thẻ" required="true"></one-to-one>
+        <one-to-one name="parkingZone" ref="com.axelor.bms.db.ParkingZones" title="Chỗ gửi xe" required="true"></one-to-one>
+        <string name="phoneNumber" title="Số điện thoại"></string>
+        <datetime name="registrationDate" title="Ngày đăng ký" required="true"></datetime>
+        <datetime name="expirationDate" title="Ngày hết hạn"></datetime>
+        <datetime name="cancelationDate" title="Ngày hủy"></datetime>
+        <datetime name="lockDate" title="Ngày khóa"></datetime>
+        <string name="lockReason" title="Lý do khóa"></string>
+    </entity>
+
+</domain-models>
